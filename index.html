@@ -154,6 +154,33 @@
         </div>
 
         <div class="space-y-8">
+            <h2 class="text-sm uppercase tracking-[0.35em] text-rose-400 font-semibold text-center flex items-center justify-center gap-4">
+                <i class="fa-solid fa-star-of-life text-rose-400 animate-spin" style="animation-duration: 6s;"></i> 
+                SERVER ADMINISTRATOR 
+                <i class="fa-solid fa-star-of-life text-rose-400 animate-spin" style="animation-duration: 6s;"></i>
+            </h2>
+            
+            <div class="flex justify-center">
+                <div class="premium-card rounded-3xl p-8 flex flex-col sm:flex-row items-center gap-6 w-full max-w-xl group" id="user-1000245550890885140">
+                    <div class="avatar-glow">
+                        <img src="" alt="Admin Avatar" class="avatar-img w-24 h-24 rounded-2xl object-cover bg-amber-950/40 border-2 border-rose-500/30">
+                        <span class="status-dot absolute -bottom-1 -right-1 w-5 h-5 rounded-full border-4 border-[#150d08] status-offline"></span>
+                    </div>
+                    <div class="text-center sm:text-left flex-1 min-w-0 w-full">
+                        <span class="inline-block px-3 py-1 bg-gradient-to-r from-rose-500/20 to-red-600/10 text-rose-400 text-xs font-bold rounded-lg uppercase tracking-wider border border-rose-500/30">
+                            <i class="fa-solid fa-key mr-1"></i> Admin
+                        </span>
+                        <h3 class="discord-name text-2xl font-bold text-white truncate mt-2 group-hover:text-rose-300 transition-colors">Loading...</h3>
+                        <p class="custom-status text-sm text-rose-200/50 truncate mt-1">กำลังดูแลความสงบเรียบร้อย...</p>
+                    </div>
+                    <div class="hidden sm:block absolute right-6 top-6 opacity-[0.03] group-hover:opacity-10 transition-opacity pointer-events-none">
+                        <i class="fa-solid fa-user-gear text-7xl text-rose-400"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="space-y-8">
             <h2 class="text-sm uppercase tracking-[0.35em] text-cyan-400 font-semibold text-center flex items-center justify-center gap-4">
                 <i class="fa-solid fa-code text-cyan-400"></i> SYSTEM DEVELOPER <i class="fa-solid fa-code text-cyan-400"></i>
             </h2>
@@ -249,13 +276,14 @@
     </div>
 
     <script>
-        // Array containing all staff Discord IDs (Including the newest one)
+        // Updated Array containing all staff Discord IDs in hierarchy order
         const activeStaffIds = [
             "1485826509972439040", // Owner 
+            "1000245550890885140", // Admin (New Added)
             "1508023704788013069", // Dev
-            "1464245095795658753", // Staff New!
-            "769770588192636949",  // Staff 1
-            "865805903390179418"   // Staff 2
+            "1464245095795658753", // Staff 1
+            "769770588192636949",  // Staff 2
+            "865805903390179418"   // Staff 3
         ];
 
         async function fetchLanyardStatus(userId) {
